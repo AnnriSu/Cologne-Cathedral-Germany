@@ -9,6 +9,38 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
+    <style>
+        /* make the active/hover highlight a light brown (tan) */
+        #navbar-example3 .nav-link.active,
+        #navbar-example3 .nav-link.active:focus,
+        #navbar-example3 .nav-link.active:hover {
+            background-color: #d2b48c !important;
+            color: #000 !important;
+        }
+
+        /* ensure non-active links keep the light text */
+        #navbar-example3 .nav-link {
+            color: #f8f9fa;
+        }
+
+        /* On md+ make the scroll area constrained and scrollable.
+                                           On small screens let the content flow naturally.
+                                           Make the nav horizontally scrollable on small screens. */
+        @media (min-width: 768px) {
+            .scrollspy-example-2 {
+                max-height: 60vh;
+                overflow: auto;
+                scroll-behavior: smooth;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            #navbar-example3 .nav {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+    </style>
 </head>
 
 <body style="background: #201e1e; font-family: 'Playfair Display', serif;">
@@ -44,7 +76,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#visitors-information">Visitor's Information</a>
                     </li>
-                
+
 
                 </ul>
             </div>
@@ -167,7 +199,7 @@
 
         <div class="row p-3 ">
             <div class="col-12 col-lg-4">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row border shadow rounded  p-3 mb-3 align-items-center"
                         style="background: rgba(32, 30, 30, 0.6);">
 
@@ -206,7 +238,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row border shadow rounded  p-3 mb-3 align-items-center"
                         style="background: rgba(32, 30, 30, 0.6); ">
 
@@ -249,7 +281,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row border shadow rounded  p-3 mb-3 align-items-center"
                         style="background: rgba(32, 30, 30, 0.6); ">
 
@@ -284,7 +316,7 @@
                                     Reduced: €5<br>
                                 </p>
                             </div>
-                            
+
 
                         </div>
 
@@ -293,6 +325,122 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container-fluid ">
+        <div class="row text-light ms-1">
+            <div class="row text-center text-light fw-bold pt-4 pb-2">
+                <h2>More Information for Visitors</h2>
+            </div>
+        </div>
+
+        <div class="row p-3 ">
+            <div class="col">
+                <div class="container-fluid">
+                    <div class="row border shadow rounded  p-3 mb-3 align-items-center text-light"
+                        style="background: rgba(32, 30, 30, 0.6);">
+
+                        <div class="col-12 p-2">
+                            <div class="row">
+                                <div class="col-12 col-md-3 col-lg-2 mb-3 mb-md-0">
+
+
+                                    <nav id="navbar-example3"
+                                        class="h-100 d-flex align-items-start pe-md-4 border-md-end">
+                                        <!-- horizontal on mobile, vertical on md+ -->
+                                        <nav class="nav nav-pills flex-row flex-md-column gap-2">
+
+                                            <a class="nav-link text-light active" href="#Best-Time-to-Visit">
+                                                <h4>Best Time to Visit</h4>
+                                            </a>
+
+                                            <a class="nav-link text-light active" href="#Getting-There">
+                                                <h4>Getting There</h4>
+                                            </a>
+
+                                            <a class="nav-link text-light active" href="#Map">
+                                                <h4>Map</h4>
+                                            </a>
+
+                                        </nav>
+                                    </nav>
+                                </div>
+
+                                <div class="col-12 col-md-9 col-lg-10 ">
+
+                                    <div data-bs-spy="scroll" data-bs-target="#navbar-example3"
+                                        data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0"
+                                        role="region" aria-label="Architecture sections">
+
+                                        <div id="Best-Time-to-Visit" class="py-2 justify-content-center">
+                                            <h3>Best Time to Visit</h3>
+                                            <p>
+                                                The best time to visit Cologne Cathedral is on weekday mornings
+                                                (8:00–10:00 AM) when it’s less crowded. Try to avoid peak hours
+                                                between 11:00 AM and 3:00 PM, particularly during the busy tourist
+                                                season.<br><br>
+
+                                                The most comfortable months to visit are spring (April–May) and
+                                                autumn (September–October), which offer pleasant weather and smaller
+                                                crowds—autumn being the ideal time overall.<br><br>
+
+                                                February brings Cologne’s famous Carnival, when the city bursts
+                                                into lively celebrations known as the “fifth season.”<br><br>
+
+                                                In December, the Christmas market held in front of the cathedral
+                                                creates a magical atmosphere with festive lights and decorations, though
+                                                it also attracts larger crowds.
+                                            </p>
+                                        </div>
+
+                                        <div id="Getting-There" class="py-2 justify-content-center">
+                                            <h3>Getting there</h3>
+                                            <p>
+                                                Reaching Cologne (Köln) is quite convenient, as the city is well
+                                                connected to major destinations across Germany and has its own
+                                                international airport. If you arrive by train, you’ll find the Cologne
+                                                Cathedral (Kölner Dom) located directly beside the main railway station.
+                                                Once in the city, it’s impossible to miss this magnificent landmark
+                                                dominating the skyline.
+
+
+                                            </p>
+                                        </div>
+
+                                        <div id="Map" class="py-2 justify-content-center"></div>
+
+                                        <img src="img\map.png" alt="" style="max-width:2500px; width:100%;"> <br><br>
+
+                                        <h6 class="text-light mb-3" style="font-size: 0.9rem; text-align: center;">
+                                            Google Maps location of
+                                            <a href="https://maps.app.goo.gl/2uzZyG5cX9k23ZvY9"
+                                                target="_blank" class="text-light">Cologne Cathedral </a> 
+                                        </h6>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
     <footer class="text-center text-lg-start text-light py-3" style="background:#131111; ">
